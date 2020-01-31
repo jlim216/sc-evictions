@@ -1,10 +1,8 @@
-# Project 
+# Evictions in South Carolina Project 
 
-This a template for a data analysis project.
+This repository provides a sample project organization using data on evictions in South Carolina.
 
-* To create a repo that is a copy, log into GitHub and use the green _Use this template_ button.
-* To create a non-repo, local copy, use _Clone or download_ > _Download ZIP_.
+The evictions data is from the
+  [Eviction Lab at Princeton University](https://evictionlab.org/).
 
-An explanation of how to use this project organization can be found in [Project workflow](https://dcl-workflow.stanford.edu/project-workflow.html).
-
-Here is an [example project](https://github.com/dcl-docs/project-example) based upon this template.
+This project performs EDA, data checking, report-making, etc.
