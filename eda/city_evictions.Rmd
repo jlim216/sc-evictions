@@ -1,0 +1,39 @@
+---
+title: Exploratory Data Analysis for City Eviction Data
+author: JB Lim
+date: "`r Sys.Date()`"
+output: 
+  github_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r message=FALSE, warning=FALSE}
+# Libraries
+library(tidyverse)
+
+# Parameters
+evictions <- here::here("data/city_evictions.rds")
+
+#===============================================================================
+```
+
+## Read in Cleaned Evictions Data
+
+```{r}
+city_evictions <-  
+  evictions %>%
+  read_rds()
+```
+
+## City with Most Evictions in South Carolina
+
+```{r}
+city_evictions %>%
+  top_n(1, wt = evictions)
+```
+
+- North Charleston had the most evictions in 2016 at South Carolina with a record of 3660.10. 
